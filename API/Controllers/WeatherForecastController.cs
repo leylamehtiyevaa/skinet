@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers;
 
 [ApiController]
+  [ApiExplorerSettings(IgnoreApi = true)]
 [Route("[controller]")]  //https://localhost:5001/WeatherForecast
+
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
